@@ -8,9 +8,9 @@
   justify-content: center;
   align-items: center;
 }
-.btn-white,
-.btn-hero,
-.btn-primary {
+.btnWhite,
+.btnHero,
+.btnPrimary {
   text-transform: uppercase;
   letter-spacing: $mainSpacing;
   color: $mainWhite;
@@ -20,20 +20,16 @@
   transition: $mainTransition;
   cursor: pointer;
 }
-.btn-white:hover, .btn-hero:hover {
+.btnWhite:hover, .btnHero:hover {
   background: $mainWhite;
   color: $primaryColor;
 }
-.btn-primary, .btn-hero {
+.btnPprimary, .btnHero {
   background: $primaryColor;
   color: $mainWhite;
   border: 2px solid $primaryColor;
 }
-.btn-primary:hover {
+.btnPrimary:hover {
   background: transparent;
   color: $primaryColor;
-}
-
-.textMain{
-    color: green;
 }

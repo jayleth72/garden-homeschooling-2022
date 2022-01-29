@@ -1,0 +1,9 @@
+@import './SiteVariables.module.scss';
+
+.error {
+  background: $primaryColor;
+  min-height: calc(100vh - 62px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+@import './SiteVariables.module.scss';
+
+.program {
+  box-shadow: $lightShadow;
+  transition: var(--mainTransition;
+}
+.program:hover {
+  box-shadow: $darkShadow;
+}
+
+.imgContainer {
+  position: relative;
+  background: $primaryColor;
+  transition: $mainTransition;
+}
+.img {
+  transition: $mainTransition;
+}
+.imgContainer:hover .img {
+  opacity: 0.3;
+}
+
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: $mainSpacing;
+  color: $mainWhite;
+  border: 2px solid $mainWhite;
+  padding: 0.5rem 0.7rem;
+  display: inline-block;
+  transition: $mainTransition;
+  cursor: pointer;
+}
+.link:hover {
+  background: $mainWhite;
+  color: $primaryColor;
+}
+.imgContainer:hover .link {
+  opacity: 1;
+}
+
+.footer {
+  padding: 1rem;
+  text-align: left;
+}
+.footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.info h6,
+.info h4 {
+  margin-bottom: 0;
+}
+.country {
+  text-transform: capitalize;
+  color: $primaryColor;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 0.4rem;
+}
+.details {
+  color: $darkGrey;
+  text-transform: uppercase;
+  text-align: left;
+}

@@ -2,9 +2,9 @@ import styles from "@styles/Header.module.scss";
 
 import React, { useState } from "react";
 import { FaAlignRight } from "react-icons/fa";
-import links from "../constants/links";
-import socialIcons from "../constants/social-icons";
-import logo from "../images/gs2022_logo.png";
+import links from "@constants/links";
+import socialIcons from "@constants/socialIcons";
+import logo from "@images/gs2022_logo.png";
 import Link from "next/link";
 import Image from "next/image";
 
