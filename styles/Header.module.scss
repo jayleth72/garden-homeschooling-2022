@@ -1,0 +1,88 @@
+@import './SiteVariables.module.scss';
+
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+}
+.logoBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.logoBtn:hover {
+  cursor: pointer;
+}
+.logoIcon {
+  color: $primaryColor;
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  list-style-type: none;
+  transition: $mainTransition;
+  height: 0;
+  overflow: hidden;
+}
+.showNav {
+  height: 425px;
+}
+.navLinks a {
+  display: block;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: $mainBlack;
+  transition: $mainTransition;
+  font-weight: bold;
+  letter-spacing: $mainSpacing;
+}
+.navLinks a:hover {
+  color: $primaryColor;
+}
+.navSocial-links {
+  display: none;
+}
+
+.textMain{
+    color: orange;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logoBtn {
+    display: none;
+  }
+  .navCenter {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navLinks {
+    height: auto;
+    display: flex;
+  }
+  .navSocialLinks {
+    display: flex;
+    line-height: 0;
+  }
+  .navSocialLinks a {
+    color: $primaryColor;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: $mainTransition;
+  }
+  .navSocialLinks a:hover {
+    color: $mainBlack;
+    transform: translateY(-5px);
+  }
+}
